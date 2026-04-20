@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "publications": "Publications",
+    "research": "Research",
+    "teaching": "Teaching",
+    "software": "Software",
+    "posts": "Posts",
+    "cv": "CV"
+  },
+  "sidebar": {
+    "phd": "Ph.D. in Computer Science",
+    "leader": "Bioinformatics Area Leader",
+    "location": "CENICAÑA, Cali — Colombia",
+    "cv_pdf": "CV (PDF)"
+  },
+  "home": {
+    "greeting": "Hi, I'm Jhon Henry",
+    "description": "I lead the Bioinformatics area at Cenicaña, focusing on the genomics of complex polyploid crops like sugarcane.",
+    "featured": "Featured Project",
+    "view_all": "View all projects"
+  },
+  "posts": {
+    "search_placeholder": "Search posts...",
+    "no_posts": "No posts found matching your search.",
+    "all_categories": "All Categories"
+  }
+}
