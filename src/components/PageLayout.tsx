@@ -14,8 +14,8 @@ export function PageLayout({
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <SiteHeader />
-      <main className="flex-1 max-w-6xl w-full mx-auto px-6 py-12">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+      <main className="flex-1 max-w-6xl w-full mx-auto px-4 md:px-6 py-8 md:py-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
           {showSidebar && <ProfileSidebar />}
           <div className="flex-1 min-w-0 flex gap-12">
             <article className="flex-1 min-w-0 prose-content">{children}</article>

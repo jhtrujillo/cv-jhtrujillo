@@ -25,33 +25,48 @@ export function ProfileSidebar() {
   ];
 
   return (
-    <aside className="w-full lg:w-64 shrink-0">
-      <div className="lg:sticky lg:top-24 flex flex-col items-center lg:items-start text-center lg:text-left">
-        <div className="w-48 h-48 rounded-full bg-secondary border border-border shadow-sm flex items-center justify-center text-5xl font-bold text-muted-foreground mb-4 overflow-hidden">
-           <img src="/profile.jpg" alt="Profile" className="w-full h-full object-cover" />
+    <aside className="w-full lg:w-72 mt-4 lg:mt-0 shrink-0 animate-reveal">
+      <div className="lg:sticky lg:top-28 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-2xl bg-white border border-border shadow-xl shadow-slate-200/50 flex items-center justify-center p-1.5 mb-6 group overflow-hidden">
+           <div className="w-full h-full rounded-xl overflow-hidden relative">
+             <img 
+               src="/profile.jpg" 
+               alt="Profile" 
+               className="w-full h-full object-cover grayscale-[0.2] transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105" 
+             />
+             <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-xl" />
+           </div>
         </div>
-        <h2 className="font-sans text-[22px] font-bold leading-tight text-foreground">
+        
+        <h2 className="font-heading text-xl md:text-2xl font-extrabold leading-tight text-primary mb-2 px-4 lg:px-0">
           Jhon Henry Trujillo Montenegro
         </h2>
-        <p className="text-[15px] text-foreground mt-1 mb-6 leading-snug">
-          {t("home_phd")}<br />
-          {t("home_undergrad")}<br />
-          {t("sidebar_leader")}<br />
-          {t("sidebar_location")}
-        </p>
-        <ul className="space-y-1.5 text-[14px] w-full">
+        
+        <div className="space-y-1 mb-6 lg:mb-8 text-[14px] md:text-[15px] font-medium text-slate-600 px-4 lg:px-0">
+          <p className="flex items-center gap-2 justify-center lg:justify-start">
+            {t("home_phd")}
+          </p>
+          <p className="flex items-center gap-2 justify-center lg:justify-start text-muted-foreground italic">
+            {t("sidebar_leader")}
+          </p>
+          <p className="flex items-center gap-2 justify-center lg:justify-start text-muted-foreground">
+            {t("sidebar_location")}
+          </p>
+        </div>
+
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2 md:gap-3 text-[14px] w-full px-4 lg:px-0">
           {links.map((l) => (
             <li key={l.label}>
               <a
                 href={l.href}
                 target={l.href.startsWith("http") || l.href.endsWith(".pdf") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors justify-center lg:justify-start py-1 group"
+                className="flex items-center gap-3 text-slate-600 hover:text-primary transition-all justify-start py-2 px-3 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-border group"
               >
-                <span style={{ color: l.color }} className="shrink-0 transition-transform group-hover:scale-110 duration-200">
+                <div style={{ color: l.color }} className="shrink-0 transition-transform group-hover:scale-125 duration-300">
                   {typeof l.icon === 'function' ? <l.icon /> : <l.icon className="w-[18px] h-[18px]" />}
-                </span>
-                <span className="font-medium">{l.label}</span>
+                </div>
+                <span className="font-semibold tracking-tight">{l.label}</span>
               </a>
             </li>
           ))}
