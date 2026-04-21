@@ -6,12 +6,12 @@ export function SiteHeader() {
   const { t } = useTranslation();
 
   const nav = [
-    { to: "/publications", label: t("nav.publications") },
-    { to: "/research", label: t("nav.research") },
-    { to: "/teaching", label: t("nav.teaching") },
-    { to: "/software", label: t("nav.software") },
-    { to: "/posts", label: t("nav.posts") },
-    { to: "/cv", label: t("nav.cv") },
+    { to: "/publications", label: t("publications") },
+    { to: "/research", label: t("research") },
+    { to: "/teaching", label: t("teaching") },
+    { to: "/software", label: t("software") },
+    { to: "/posts", label: t("blog") },
+    { to: "/cv", label: t("cv") },
   ] as const;
 
   return (

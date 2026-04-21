@@ -21,7 +21,7 @@ export function ProfileSidebar() {
     { icon: GraduationCap, label: "Google Scholar", href: "https://scholar.google.com/citations?user=lmq0jmcAAAAJ&hl", color: "#4285F4" },
     { icon: BookOpen, label: "ORCID", href: "https://orcid.org/0000-0001-9336-584X", color: "#A6CE39" },
     { icon: Microscope, label: "ResearchGate", href: "https://www.researchgate.net/profile/Jhon-Trujillo", color: "#00CCBB" },
-    { icon: FileText, label: t("sidebar.cv_pdf"), href: "/cv-jhtrujillo.pdf", color: "#D32F2F" },
+    { icon: FileText, label: t("sidebar_cv_pdf"), href: "/cv-jhtrujillo.pdf", color: "#D32F2F" },
   ];
 
   return (
@@ -34,9 +34,10 @@ export function ProfileSidebar() {
           Jhon Henry Trujillo Montenegro
         </h2>
         <p className="text-[15px] text-foreground mt-1 mb-6 leading-snug">
-          {t("sidebar.phd")}<br />
-          {t("sidebar.leader")}<br />
-          {t("sidebar.location")}
+          {t("home_phd")}<br />
+          {t("home_undergrad")}<br />
+          {t("sidebar_leader")}<br />
+          {t("sidebar_location")}
         </p>
         <ul className="space-y-1.5 text-[14px] w-full">
           {links.map((l) => (

@@ -18,7 +18,7 @@ function Research() {
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto py-8 px-4">
-        <h1 className="text-4xl font-bold mb-8">{t("nav.research")}</h1>
+        <h1 className="text-4xl font-bold mb-8">{t("research")}</h1>
         
         <div className="prose prose-slate max-w-none mb-16">
           <p className="text-xl leading-relaxed text-muted-foreground italic border-l-4 border-primary/20 pl-6 mb-12">

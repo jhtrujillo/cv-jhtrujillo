@@ -1,27 +1,28 @@
 {
-  "nav": {
-    "publications": "Publications",
-    "research": "Research",
-    "teaching": "Teaching",
-    "software": "Software",
-    "posts": "Posts",
-    "cv": "CV"
-  },
-  "sidebar": {
-    "phd": "Ph.D. in Computer Science",
-    "leader": "Bioinformatics Area Leader",
-    "location": "CENICAÑA, Cali — Colombia",
-    "cv_pdf": "CV (PDF)"
-  },
-  "home": {
-    "greeting": "Hi, I'm Jhon Henry",
-    "description": "I lead the Bioinformatics area at Cenicaña, focusing on the genomics of complex polyploid crops like sugarcane.",
-    "featured": "Featured Project",
-    "view_all": "View all projects"
-  },
-  "posts": {
-    "search_placeholder": "Search posts...",
-    "no_posts": "No posts found matching your search.",
-    "all_categories": "All Categories"
-  }
+  "publications": "Publications",
+  "research": "Research",
+  "teaching": "Teaching",
+  "software": "Software",
+  "blog": "Posts",
+  "cv": "CV",
+  "sidebar_phd": "Ph.D. in Computer Science",
+  "sidebar_leader": "Bioinformatics Area Leader",
+  "sidebar_location": "CENICAÑA, Cali — Colombia",
+  "sidebar_cv_pdf": "CV (PDF)",
+  "home_about_me": "About Me",
+  "home_short_bio": "Computer Science Engineer and Bioinformatics Scientist with over 12 years of experience in biotechnology and computational approaches for genetic improvement. Specialized in complex polyploid crops, particularly sugarcane, with strong expertise in genomic data analysis and integration.",
+  "home_detailed_bio": "Extensive experience in genetic characterization, complex genome assembly, and next-generation sequencing (NGS) data analysis. Proven expertise in comparative and functional genomics, metagenomics, transcriptomics, genetic mapping, and integration of genomic and phenotypic data for breeding applications. I work closely with plant breeders, biotechnologists, and multidisciplinary teams, contributing to the design and execution of scientific research projects. Demonstrated leadership in the coordination and management of scientific initiatives, bridging computational and biological domains to support decision-making in breeding programs.",
+  "home_technical_bio": "Proficient in Unix/Linux environments and programming languages including Python, R, Java, PHP, and Bash. Strong background in algorithm development, bioinformatics pipelines, and software solutions. Demonstrated ability to manage multiple projects, meet deadlines, and work effectively both independently and in collaborative environments.",
+  "home_degrees": "Education",
+  "home_phd": "Ph.D. in Computer Science",
+  "home_phd_uni": "Universidad del Valle, Cali, Colombia (2012 – 2020)",
+  "home_phd_thesis": "Thesis: Genome assembly of a hybrid sugarcane (Saccharum spp.) and construction of molecular fingerprint using High Performance Sequencing. Meritorial doctoral thesis.",
+  "home_undergrad": "Computer Science Engineer",
+  "home_undergrad_uni": "Universidad Javeriana, Cali, Colombia (2002 – 2009)",
+  "home_undergrad_thesis": "Thesis: Design of a 2D Coordinate Capture Library of Human Movements.",
+  "home_get_in_touch": "Get in Touch",
+  "home_contact_text": "I am always open to discussing bioinformatics, plant genomics, or potential research collaborations.",
+  "posts_search_placeholder": "Search posts...",
+  "posts_no_posts": "No posts found matching your search.",
+  "posts_all_categories": "All Categories"
 }

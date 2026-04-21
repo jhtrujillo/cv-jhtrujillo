@@ -19,26 +19,53 @@ function Home() {
 
   return (
     <PageLayout>
-      <div className="max-w-3xl py-8 px-4">
-        <section className="mb-12 prose-content">
-          <h1 className="text-4xl font-bold mb-8">About Me</h1>
-          <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-            I am a <strong>Computer Science Engineer and Bioinformatics Scientist</strong> leading the Bioinformatics area at 
-            <strong> Cenicaña</strong> (Colombian Sugarcane Research Center). My work focuses on the genomics of complex polyploid 
-            crops—especially sugarcane (<em>Saccharum spp.</em>)—specializing in large-scale genomic data analysis, 
-            complex genome assembly, and the development of high-performance bioinformatics toolkits.
-          </p>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            Explore my <Link to="/research" className="text-primary hover:underline">research</Link>, 
-            view my <Link to="/publications" className="text-primary hover:underline">publications</Link>, or check out the 
-            <Link to="/software" className="text-primary hover:underline">software toolkits</Link> I develop to support modern plant breeding.
-          </p>
+      <div className="max-w-4xl py-8 px-4">
+        <section className="mb-16">
+          <h1 className="text-4xl font-bold mb-8">{t("home_about_me")}</h1>
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              {t("home_short_bio")}
+            </p>
+            <p>
+              {t("home_detailed_bio")}
+            </p>
+            <p>
+              {t("home_technical_bio")}
+            </p>
+          </div>
         </section>
 
-        <section className="mt-20">
-          <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold mb-6">{t("home_degrees")}</h2>
+          <div className="space-y-8">
+            <div className="flex items-start gap-4">
+              <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                <span className="text-primary font-bold text-lg">1</span>
+              </div>
+              <div className="space-y-1">
+                <h3 className="font-bold text-foreground text-xl">{t("home_phd")}</h3>
+                <p className="text-primary font-medium">{t("home_phd_uni")}</p>
+                <p className="text-muted-foreground italic leading-relaxed">{t("home_phd_thesis")}</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-4">
+              <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                <span className="text-primary font-bold text-lg">2</span>
+              </div>
+              <div className="space-y-1">
+                <h3 className="font-bold text-foreground text-xl">{t("home_undergrad")}</h3>
+                <p className="text-primary font-medium">{t("home_undergrad_uni")}</p>
+                <p className="text-muted-foreground italic leading-relaxed">{t("home_undergrad_thesis")}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">{t("home_get_in_touch")}</h2>
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
-            I am always open to discussing bioinformatics, plant genomics, or potential research collaborations. 
+            {t("home_contact_text")}
           </p>
           <a href="mailto:jhtrujillomonte@gmail.com" className="inline-flex items-center gap-3 text-primary text-xl font-bold hover:underline group">
              jhtrujillomonte@gmail.com

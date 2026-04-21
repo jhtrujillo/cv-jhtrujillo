@@ -41,7 +41,7 @@ function Posts() {
     <PageLayout>
       <div className="max-w-4xl mx-auto py-12 px-4">
         <header className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">{t("nav.posts")}</h1>
+          <h1 className="text-4xl font-bold mb-4">{t("blog")}</h1>
           <p className="text-muted-foreground text-lg italic border-l-4 border-primary/20 pl-4 mb-10">
             Notes and insights on bioinformatics, genomics, and the pursuit of reproducible research.
           </p>
@@ -51,7 +51,7 @@ function Posts() {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
-                placeholder={t("posts.search_placeholder")}
+                placeholder={t("posts_search_placeholder")}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="w-full h-12 pl-12 pr-4 rounded-2xl border border-border bg-white focus:ring-4 focus:ring-primary/10 outline-none transition-all shadow-sm"
@@ -70,7 +70,7 @@ function Posts() {
                     : "bg-white text-muted-foreground border-border hover:border-primary/50"
                 }`}
               >
-                {cat === "All" ? t("posts.all_categories") : cat}
+                {cat === "All" ? t("posts_all_categories") : cat}
               </button>
             ))}
           </div>
@@ -120,7 +120,7 @@ function Posts() {
           </div>
         ) : (
           <div className="text-center py-24 bg-secondary/30 rounded-3xl border border-dashed border-border mt-12">
-            <p className="text-muted-foreground italic text-lg">{t("posts.no_posts")}</p>
+            <p className="text-muted-foreground italic text-lg">{t("posts_no_posts")}</p>
           </div>
         )}
       </div>
